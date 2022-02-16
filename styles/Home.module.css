@@ -114,3 +114,7 @@
     flex-direction: column;
   }
 }
+
+.cardHeader {
+  text-align: center;
+}
