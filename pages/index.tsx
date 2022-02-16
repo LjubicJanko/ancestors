@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ''
@@ -25,44 +26,54 @@ const Home: NextPage = () => {
         </p>
 
         <div className={styles.grid}>
-          <a href="/" className={styles.card}>
-            <h2 className={styles.cardHeader}>Assasination</h2>
-            <p>Find out about assasination in Sarajevo.</p>
-          </a>
+          <div className={styles.card}>
+            <Link href="/assasination">
+              <>
+                <h2 className={styles.cardHeader}>Assasination</h2>
+                <p>Find out about assasination in Sarajevo.</p>
+              </>
+            </Link>
+          </div>
+          <div className={styles.card}>
 
-          <a href="/" className={styles.card}>
-            <h2 className={styles.cardHeader}>Army</h2>
-            <p>Find out about Serbian army.</p>
-          </a>
+            <Link href="/army">
+              <>
+                <h2 className={styles.cardHeader}>Army</h2>
+                <p>Find out about Serbian army.</p>
+              </>
+            </Link>
+          </div>
 
-          <a
-            href="/"
-            className={styles.card}
-          >
-            <h2 className={styles.cardHeader}>Battles</h2>
-            <p>Find out about Serbian battles in WW1</p>
-          </a>
+          <div className={styles.card}>
+            <Link
+              href="/battles"
+            >
+              <>
+                <h2 className={styles.cardHeader}>Battles</h2>
+                <p>Find out about Serbian battles in WW1</p>
+              </>
+            </Link>
+          </div>
 
-          <a
-            href="/"
-            className={styles.card}
-          >
-            <h2 className={styles.cardHeader}>Interactive map</h2>
-            <p>
-              Look into Serbian borders throguh WW1.
-            </p>
-          </a>
+          <div className={styles.card}>
+            <Link
+              href="/map"
+            >
+              <>
+                <h2 className={styles.cardHeader}>Interactive map</h2>
+                <p>
+                  Look into Serbian borders throguh WW1.
+                </p>
+              </>
+            </Link>
+          </div>
         </div>
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <Link href="/janko">
           Author Janko Ljubic.
-        </a>
+        </Link>
       </footer>
     </div>
   )
