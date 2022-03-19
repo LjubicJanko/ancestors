@@ -34,15 +34,13 @@ const Home: NextPage = () => {
               </>
             </Link>
           </div>
-          <div className={styles.card}>
 
-            <Link href="/army">
-              <>
+          <Link href="/army">
+            <div className={styles.card}>
                 <h2 className={styles.cardHeader}>Army</h2>
                 <p>Find out about Serbian army.</p>
-              </>
-            </Link>
-          </div>
+            </div>
+          </Link>
 
           <div className={styles.card}>
             <Link
