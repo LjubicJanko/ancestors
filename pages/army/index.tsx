@@ -1,4 +1,5 @@
+import { ArmyPage } from "../../components/army/army-page";
 
-export default function ArmyPage() {
-    return <>Army</>
+export default function Army() {
+  return <ArmyPage />;
 }

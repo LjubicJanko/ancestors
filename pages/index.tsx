@@ -1,6 +1,5 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
@@ -20,10 +19,6 @@ const Home: NextPage = () => {
         <h1 className={styles.title}>
           Serbia in WW1
         </h1>
-
-        <p className={styles.description}>
-          Tribute to my ancestors.
-        </p>
 
         <div className={styles.grid}>
           <div className={styles.card}>
@@ -67,12 +62,6 @@ const Home: NextPage = () => {
           </div>
         </div>
       </main>
-
-      <footer className={styles.footer}>
-        <Link href="/janko">
-          Author Janko Ljubic.
-        </Link>
-      </footer>
     </div>
   )
 }
